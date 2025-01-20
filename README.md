@@ -1,6 +1,4 @@
-# AutoDiff-Ocaml
-
-# OCaml Automatic Differentiation Library with Web Interface
+# Automatic Differentiation Library with Web Interface in OCaml
 
 ## Recent Updates
 
@@ -57,27 +55,47 @@ http://localhost:8080
 
 ## Example Descriptions
 
-1. **Basic Operations**
-   - Demonstrates basic tensor operations
-   - Shows computational graph for operations
+1. **Basic Operations** (`basic.ml`)
+   - Demonstrates fundamental tensor operations (creation, addition, multiplication)
+   - Shows element-wise operations on tensors
+   - Includes examples of matrix multiplication and dot products
+   - Visualizes how basic operations are composed in the computational graph
+   - Useful for understanding the building blocks of the autodiff system
 
-2. **Simple Derivatives**
-   - Shows automatic differentiation for simple functions
-   - Includes visualization of computation path
+2. **Simple Derivatives** (`simple.ml`)
+   - Compares automatic differentiation results with numerical estimates
+   - Implements functions like `f(a,b) = (a * (a/b)) + (a + b)`
+   - Shows computation of partial derivatives
+   - Demonstrates the accuracy of autodiff vs numerical approaches
+   - Provides clear examples of chain rule application
 
-3. **Large Matrix Operations**
-   - Demonstrates handling of large matrices
-   - Includes performance metrics
+3. **Large Matrix Operations** (`large.ml`)
+   - Tests the system with large matrices (1000x1000)
+   - Demonstrates performance on complex matrix operations
+   - Includes timing information for computations
+   - Shows how the system handles memory-intensive operations
+   - Takes approximately 40 seconds to execute due to size
 
-4. **Neural Network**
-   - Binary classification example
-   - Shows training progress and metrics
-   - Includes architecture visualization
-   - Achieves 99% accuracy
+4. **Neural Network** (`nn.ml`)
+   - Implements a binary classification neural network
+   - Shows the training process over 100 epochs
+   - Uses leaky ReLU and sigmoid activations
+   - Demonstrates gradient descent optimization
+   - Achieves 99% accuracy with visualized training progress
 
-5. **Computation Graph**
-   - Visualizes the internal computation graph
-   - Shows gradient flow and operations
+5. **Computation Graph Visualization** (`printed.ml`)
+   - Shows the internal representation of the computation graph
+   - Displays how operations are broken down into elementary compositions
+   - Visualizes gradient flow through the network
+   - Helps understand the underlying autodiff mechanism
+   - Useful for debugging and understanding backpropagation
+
+6. **Graph Visualization** (`visualize.ml`)
+   - Creates DOT format visualization of computation graphs
+   - Shows how expressions are built from chains of operations
+   - Visualizes variable dependencies
+   - Demonstrates the structure of computational graphs
+   - Useful for understanding how complex expressions are composed
 
 ## Dependencies
 - core
@@ -87,4 +105,4 @@ http://localhost:8080
 - unix
 
 ## Note
-The project now includes a comprehensive web interface for visualizing and understanding automatic differentiation concepts. Each example includes both computational output and visual representation of the operations being performed.
+The project now includes a comprehensive web interface for visualizing and understanding automatic differentiation concepts. Each example includes both computational output and visual representation of the operations being performed. The examples progress from basic operations to complex neural networks, providing a complete understanding of automatic differentiation principles and their applications.
