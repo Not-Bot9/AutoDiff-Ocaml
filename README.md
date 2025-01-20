@@ -90,12 +90,6 @@ http://localhost:8080
    - Helps understand the underlying autodiff mechanism
    - Useful for debugging and understanding backpropagation
 
-6. **Graph Visualization** (`visualize.ml`)
-   - Creates DOT format visualization of computation graphs
-   - Shows how expressions are built from chains of operations
-   - Visualizes variable dependencies
-   - Demonstrates the structure of computational graphs
-   - Useful for understanding how complex expressions are composed
 
 ## Dependencies
 - core
