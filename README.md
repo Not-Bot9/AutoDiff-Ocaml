@@ -1,5 +1,8 @@
 # Automatic Differentiation Library with Web Interface in OCaml
 
+## Note
+The project now includes a comprehensive web interface for visualizing and understanding automatic differentiation concepts. Each example includes both computational output and visual representation of the operations being performed. The examples progress from basic operations to neural networks, demonstrating the applications of Automatic Differentiation.
+
 ## Recent Updates
 
 ### 1. Added Web Interface
@@ -25,9 +28,6 @@ Added visualizations for different examples:
 
 ### 4. Front-end Features
 - Real-time graph generation using Graphviz
-- Interactive example selection
-- Progress indicators for long-running computations
-- Clean and responsive UI design
 - Detailed output formatting
 
 ### 5. Code Organization
@@ -102,7 +102,5 @@ http://localhost:8080
 - dream (web server)
 - graphviz (for visualization)
 - bigarray
-- unix
 
-## Note
-The project now includes a comprehensive web interface for visualizing and understanding automatic differentiation concepts. Each example includes both computational output and visual representation of the operations being performed. The examples progress from basic operations to complex neural networks, providing a complete understanding of automatic differentiation principles and their applications.
+
