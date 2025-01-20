@@ -100,7 +100,7 @@ http://localhost:8080
 ## Dependencies
 - core
 - dream (web server)
-- graphviz (for visualization)
+- graphviz (for graph generation)
 - bigarray
 
 
